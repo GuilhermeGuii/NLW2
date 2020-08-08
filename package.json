@@ -1,0 +1,17 @@
+{
+  "name": "nlw2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeGuii/nlw2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GuilhermeGuii/nlw2/issues"
+  },
+  "homepage": "https://github.com/GuilhermeGuii/nlw2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
