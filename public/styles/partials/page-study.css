@@ -132,6 +132,12 @@
     background: var(--color-secondary-dark);
 }
 
+ #page-study main .no-results {
+     max-width: 30rem;
+     margin: 12rem auto;
+     text-align: center;
+ }
+
 /* Design Responsivo para Desktop */
 
 @media (min-width:700px) {

@@ -4,7 +4,8 @@
  const {
      pageLending, 
      pageStudy, 
-     pageGiveClasses
+     pageGiveClasses,
+     saveClasses
     } = require('./pages')
 
 // configurar nunjucks (template engine)
@@ -17,11 +18,14 @@ nunjucks.configure('src/views', {
 
 //inicio  e configuração do servidor
  server
+ // receber os dados do req.body
+ .use(express.urlencoded({ extended: true}))
  //configurar arquivos estáticos  (css, scripts, imagens)
  server.use(express.static("public"))  
 //rotas de aplicação
 .get("/", pageLending)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
+.post("/save-classes", saveClasses)
 //start do servidor
 .listen(5500)
