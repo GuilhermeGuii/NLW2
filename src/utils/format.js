@@ -2,16 +2,16 @@ const subjects = [
     "Artes",
     "Biologia",
     "Ciências",
-    "Educação Física",
+    "Educação física",
     "Física",
     "Geografia",
     "História",
-    "Matematica",
+    "Matemática",
     "Português",
     "Química",
- ]
+]
 
- const weekdays = [
+const weekdays = [
     "Domingo",
     "Segunda-feira",
     "Terça-feira",
@@ -19,18 +19,16 @@ const subjects = [
     "Quinta-feira",
     "Sexta-feira",
     "Sábado",
- ]
+]
 
- //Funcionalidades
 function getSubject(subjectNumber) {
     const position = +subjectNumber - 1
     return subjects[position]
-
 }
 
 function convertHoursToMinutes(time) {
-   const [hour, minutes] = time.split('')
-   return Number((hour * 60) + minutes)
+    const [hour, minutes]  = time.split(":")
+    return Number((hour * 60) + minutes)
 }
 
 module.exports = {
@@ -38,5 +36,4 @@ module.exports = {
     weekdays,
     getSubject,
     convertHoursToMinutes
-
 }
